@@ -3,6 +3,9 @@ const app=express();
 app.get("/",(req,res)=>{
     res.send("My first backend server is run")
 })
+app.get("/home",(req,res)=>{
+    res.send("welcome to home")
+})
 app.listen(3000,()=>{
     console.log("My first server is run on 3000 port")
 })
